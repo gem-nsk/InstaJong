@@ -39,7 +39,7 @@ public class CellScr : MonoBehaviour
 
     public static void Shuffle(int[] mas)
     {
-        // создаем экземпляр класса Random для генерирования случайных чисел
+       
         Random rand = new Random();
 
         for (int i = mas.Length - 1; i >= 1; i--)
