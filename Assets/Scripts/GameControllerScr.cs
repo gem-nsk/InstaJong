@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class GameControllerScr : MonoBehaviour
 {
     public int cellCount;
-    public int randomNum;
-
-
+    
     public int[] partiesID = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,36,54,72,90,108,126,
         144,162,180,197,198,196,195,194,193,192,191,190,189,188,187,186,185,184,183,182,181,163,145,127,109,91,73,55,37,19};
 
@@ -23,6 +21,7 @@ public class GameControllerScr : MonoBehaviour
 
     public GameObject cellButton;
     public Transform cellGroup;
+    //public GameObject clickButton;
 
 
     void Start()
@@ -50,11 +49,8 @@ public class GameControllerScr : MonoBehaviour
         CellScr.Shuffle(CellScr.mas);
         for (int i = 0; i < diceID.Length; i++)
         {
-           
             AllCells[diceID[i] - 1].SetState(1);
             AllCells[diceID[i] - 1].GetRandom(i);
         }
     }
-    
-
 }
