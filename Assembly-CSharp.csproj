@@ -81,6 +81,12 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/UnityProject/InstaJong/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Editor">
+      <HintPath>D:/UnityProject/InstaJong/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaomiSupport">
+      <HintPath>D:/UnityProject/InstaJong/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/UnityProject/InstaJong/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -272,6 +278,12 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/UnityProject/InstaJong/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>D:/UnityProject/InstaJong/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>D:/UnityProject/InstaJong/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/UnityEngine/2019.1.8f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

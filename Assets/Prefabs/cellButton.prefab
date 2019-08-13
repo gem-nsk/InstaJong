@@ -149,7 +149,7 @@ MonoBehaviour:
   id: 0
   randomNum: 0
   normCol: {r: 0, g: 0, b: 0, a: 0}
-  partiesCol: {r: 1, g: 1, b: 1, a: 1}
+  partiesCol: {r: 0, g: 0, b: 0, a: 0.42745098}
 --- !u!114 &-7580138334152581442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +162,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd3b9e49f522a04a82a55a017746ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 0}

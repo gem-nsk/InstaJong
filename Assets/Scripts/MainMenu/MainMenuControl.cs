@@ -17,11 +17,19 @@ public class MainMenuControl : MonoBehaviour
         
     }
 
-    public void PlayPressed()
+    
+      
+    public void NewGanePressed()
     {
         SceneManager.LoadScene("Game");
-    }
+       
+       
 
+    }
     
+    public void ButtonBack()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
 }

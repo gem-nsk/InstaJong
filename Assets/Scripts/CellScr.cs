@@ -68,9 +68,19 @@ public class CellScr : MonoBehaviour
         return randomNum;
     }
 
+   
+
+
     public void ExitPressed()
     {
-        SceneManager.LoadScene("Menu");
+        Time.timeScale = 0;
+        
+        SceneManager.LoadSceneAsync("Menu");
+       
+
     }
+          
+
+    
 
 }
