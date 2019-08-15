@@ -33,8 +33,14 @@ public class CellScr : MonoBehaviour
 
         else if (i == 1)
         {
-            GetComponent<Image>().color = partiesCol;
-            
+            Image button = GetComponent<Image>();
+
+            String path = "image/file"+randomNum.ToString();
+            button.color = new Color32(255,255,255,255);
+            button.sprite = Resources.Load<Sprite>(path);
+
+            // button.color = new Color32(255,255,255,255);
+            // button.sprite = Resources.Load<Sprite>("image/file1");
         }
     }
 

@@ -49,8 +49,9 @@ public class GameControllerScr : MonoBehaviour
         CellScr.Shuffle(CellScr.mas);
         for (int i = 0; i < diceID.Length; i++)
         {
-            AllCells[diceID[i] - 1].SetState(1);
             AllCells[diceID[i] - 1].GetRandom(i);
+            AllCells[diceID[i] - 1].SetState(1);
+            
         }
     }
 }
