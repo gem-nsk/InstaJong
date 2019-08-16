@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using Assets.Scripts;
 using System.IO;
 using System.Net;
+using System;
 
 public class MainMenuControl : MonoBehaviour
 {
@@ -30,9 +31,17 @@ public class MainMenuControl : MonoBehaviour
         var list = webClient.DownloadString("https://api.instagram.com/v1/users/self/media/recent/?access_token=" + token);
 
         var dyn = JsonConvert.DeserializeObject<RootObject>(list);
+        int i = 1;
         foreach (var data in dyn.data)
         {
-            Debug.Log(data.user.username);
+            string url = data.images.thumbnail.url;
+            using (WebClient client = new WebClient())
+            {
+                //client.DownloadFile(new Uri(url), @"D:\workspace\InstaJong\Assets\Resources\image");
+                // OR 
+                client.DownloadFileAsync(new Uri(url), @"D:\workspace\InstaJong\Assets\Resources\image\file"+i+".jpg");
+            }
+            i++;
         }
 
         SceneManager.LoadScene("Game");
