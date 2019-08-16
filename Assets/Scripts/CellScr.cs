@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
 using Random = System.Random;
+using System.Net;
+using Newtonsoft.Json;
+using Assets.Scripts;
 
 public class CellScr : MonoBehaviour
 {
@@ -34,6 +37,8 @@ public class CellScr : MonoBehaviour
         else if (i == 1)
         {
             Image button = GetComponent<Image>();
+
+            
 
             String path = "image/file"+randomNum.ToString();
             button.color = new Color32(255,255,255,255);
