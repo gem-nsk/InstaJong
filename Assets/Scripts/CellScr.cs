@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
+using System.IO;
 using Random = System.Random;
 
 public class CellScr : MonoBehaviour
@@ -17,10 +18,8 @@ public class CellScr : MonoBehaviour
                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36,
                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36};
 
-    void Start()
-    {
+   
 
-    }
 
 
     public void SetState(int i)
@@ -67,20 +66,4 @@ public class CellScr : MonoBehaviour
 
         return randomNum;
     }
-
-   
-
-
-    public void ExitPressed()
-    {
-        Time.timeScale = 0;
-        
-        SceneManager.LoadSceneAsync("Menu");
-       
-
-    }
-          
-
-    
-
 }

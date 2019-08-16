@@ -66,6 +66,10 @@
     <Compile Include="Assets\Scripts\ClickButton.cs" />
     <Compile Include="Assets\Scripts\GameControllerScr.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuControl.cs" />
+    <Compile Include="Assets\Scripts\Refresh.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\XML\ReadXmlData.cs" />
+    <Compile Include="Assets\Scripts\XML\XMLOp.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/UnityProject/InstaJong/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

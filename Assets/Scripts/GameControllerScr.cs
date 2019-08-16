@@ -21,7 +21,6 @@ public class GameControllerScr : MonoBehaviour
 
     public GameObject cellButton;
     public Transform cellGroup;
-    //public GameObject clickButton;
 
 
     void Start()
@@ -47,6 +46,7 @@ public class GameControllerScr : MonoBehaviour
     public void CreateParties()
     {
         CellScr.Shuffle(CellScr.mas);
+
         for (int i = 0; i < diceID.Length; i++)
         {
             AllCells[diceID[i] - 1].SetState(1);

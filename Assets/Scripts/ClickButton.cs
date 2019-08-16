@@ -92,18 +92,12 @@ public class ClickButton : MonoBehaviour
                 {
                     panel.color = Color.white * 0.0f;
                     C.state = 0;
+                    //
+                    //ReadXmlData.knight.diceID1.Add(idy, idx);
+                    //
                 }
             }
-            //else if (x != y && idx != idy)
-            //{
-            //    //Debug.Log(x != y);
-            //    if(panel.color == Color.cyan)
-            //    {
-            //        panel.color = Color.blue;
-            //    }
-
-            //    //Debug.Log("y");
-            //}
+          
             r--;
         }
     }

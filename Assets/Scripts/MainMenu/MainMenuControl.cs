@@ -17,9 +17,13 @@ public class MainMenuControl : MonoBehaviour
         
     }
 
+    public void ContinuePressed()
+    {
+
+    }
     
       
-    public void NewGanePressed()
+    public void NewGamePressed()
     {
         SceneManager.LoadScene("Game");
        
