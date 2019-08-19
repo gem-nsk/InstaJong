@@ -25,6 +25,7 @@ public class ReadXmlData : MonoBehaviour
     }
 
     
+
     public void SaveArray(int idElem)
     {
         DataCellButton knight = new DataCellButton();

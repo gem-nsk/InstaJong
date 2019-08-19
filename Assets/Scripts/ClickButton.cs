@@ -27,6 +27,9 @@ public class ClickButton : MonoBehaviour
         Delete();
     }
 
+
+    
+
     public int Reset()
     {
         if (x != y)
@@ -50,21 +53,26 @@ public class ClickButton : MonoBehaviour
         {
             if (x == firstClick)
             {
+                var P = gameObject.GetComponent(typeof(ReadXmlData)) as ReadXmlData; 
+                P.SaveArray(idx); 
+                var Z = gameObject.GetComponent(typeof(ReadXmlData)) as ReadXmlData;
+                Z.SaveArray(idy);
                 panel.color = Color.white * 0.0f;
                 C.state = 0;
-                //Debug.Log("jjjjjjjj ");
+               
             }
         }
 
         return 5;
     }
 
+
     public void Foo()
     {
 
         if (r == 0)
         {
-            //panel.color = Color.cyan;
+            
             var A = gameObject.GetComponent(typeof(CellScr)) as CellScr;
             firstClick = A.randomNum;
             x = firstClick;
@@ -75,16 +83,17 @@ public class ClickButton : MonoBehaviour
         }
         else if (firstClick == 0 && r == 1)
         {
-            //panel.color = Color.cyan;
+            
             var B = gameObject.GetComponent(typeof(CellScr)) as CellScr;
             secondClick = B.randomNum;
             y = secondClick;
             var M = gameObject.GetComponent(typeof(CellScr)) as CellScr;
             idy = M.id;
+            
             Debug.Log("Click2 " + secondClick);
             if (x == y && idx != idy)
             {
-                //Debug.Log(x == y);
+                
                 panel.color = Color.white * 0.0f;
                 var C = gameObject.GetComponent(typeof(CellScr)) as CellScr;
                 C.state = 0;
@@ -92,9 +101,8 @@ public class ClickButton : MonoBehaviour
                 {
                     panel.color = Color.white * 0.0f;
                     C.state = 0;
-                    //
-                    //ReadXmlData.knight.diceID1.Add(idy, idx);
-                    //
+                    
+                  
                 }
             }
           
