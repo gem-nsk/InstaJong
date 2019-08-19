@@ -26,7 +26,7 @@ public class MainMenuControl : MonoBehaviour
       
     public void NewGanePressed()
     {
-        string token = "1445481979.9d5ac8f.3a382bd5bdd441bd84a6ff98c2770f43";
+        string token = "55595064.dd12fa9.6dc460358d3544e0a1fc2cac28dcff9b";
         WebClient webClient = new WebClient();
         var list = webClient.DownloadString("https://api.instagram.com/v1/users/self/media/recent/?access_token=" + token);
 
