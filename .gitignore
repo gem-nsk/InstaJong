@@ -1,13 +1,6 @@
-Temp/UnityLockfile
-<<<<<<< HEAD
 *.lock
 *.info
 *.buildreport
-=======
 *.meta
 *.jpg
-*.info
-*.buildreport
-*.lock
 .vs
->>>>>>> field
