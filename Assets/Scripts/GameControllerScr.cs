@@ -38,6 +38,8 @@ public class GameControllerScr : MonoBehaviour
             tmpCell.transform.SetParent(cellGroup, false);
             tmpCell.GetComponent<CellScr>().id = i + 1;
             tmpCell.GetComponent<CellScr>().SetState(0);
+            //tmpCell.GetComponent<Cell>().id = i + 1;
+            //tmpCell.GetComponent<Cell>().setState(0);
             AllCells.Add(tmpCell.GetComponent<CellScr>());
         }
     }
