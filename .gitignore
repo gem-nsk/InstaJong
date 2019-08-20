@@ -4,3 +4,4 @@ Temp/UnityLockfile
 *.info
 *.buildreport
 *.lock
+.vs
