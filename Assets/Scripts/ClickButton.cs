@@ -26,9 +26,8 @@ public class ClickButton : MonoBehaviour
         Reset();
         Delete();
     }
-
-
     
+
 
     public int Reset()
     {
@@ -59,8 +58,11 @@ public class ClickButton : MonoBehaviour
                 Z.SaveArray(idy);
                 panel.color = Color.white * 0.0f;
                 C.state = 0;
-               
+                x = 2;
+                y = 2;
+                return 0;
             }
+            return 0;
         }
 
         return 5;
@@ -101,8 +103,7 @@ public class ClickButton : MonoBehaviour
                 {
                     panel.color = Color.white * 0.0f;
                     C.state = 0;
-                    
-                  
+                   
                 }
             }
           

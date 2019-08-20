@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 655918642545751800}
   - component: {fileID: 8292273852291492660}
+  - component: {fileID: 3688872397028231687}
   m_Layer: 0
-  m_Name: ClickButton
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,5 +42,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d290c34476fb90b4f9ff400899f5c268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3688872397028231687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2698507664635026625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 350f93c490d9c3f4bb551e6c4b7bdef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

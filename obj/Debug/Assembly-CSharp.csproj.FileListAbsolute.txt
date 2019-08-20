@@ -1,0 +1,2 @@
+D:\UnityProject\InstaJong\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\UnityProject\InstaJong\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
