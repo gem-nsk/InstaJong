@@ -9,9 +9,13 @@ using Random = System.Random;
 
 public class CellScr : MonoBehaviour
 {
-    public int state, id;
+    public int state;
+    public int id;
     public int randomNum;
-    public Color normCol, partiesCol;
+
+    public Color normCol;
+    public Color partiesCol;
+
 
     public static int[] mas = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36,
                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36,
@@ -19,8 +23,6 @@ public class CellScr : MonoBehaviour
                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36};
 
    
-
-
 
     public void SetState(int i)
     {
@@ -33,37 +35,42 @@ public class CellScr : MonoBehaviour
         else if (i == 1)
         {
             GetComponent<Image>().color = partiesCol;
-            
+            /*
+            Image button = GetComponent<Image>();
+            String path = "image/file" + randomNum.ToString();
+            button.color = new Color32(255, 255, 255, 255);
+            button.sprite = Resources.Load<Sprite>(path);
+            */
         }
     }
-
-
-    public static void Shuffle(int[] mas)
-    {
-       
-        Random rand = new Random();
-
-        for (int i = mas.Length - 1; i >= 1; i--)
+    
+        public static void Shuffle(int[] mas)
         {
-            int j = rand.Next(i + 1);
 
-            int tmp = mas[j];
-            mas[j] = mas[i];
-            mas[i] = tmp;
+            Random rand = new Random();
+
+            for (int i = mas.Length - 1; i >= 1; i--)
+            {
+                int j = rand.Next(i + 1);
+
+                int tmp = mas[j];
+                mas[j] = mas[i];
+                mas[i] = tmp;
+            }
         }
-    }
 
 
-    public int GetRandom(int curentNum)
-    {
-
-        for (int j = curentNum; j < mas.Length; j++)
+        public int GetRandom(int curentNum)
         {
-            randomNum = mas[j];
+
+            for (int j = curentNum; j < mas.Length; j++)
+            {
+                randomNum = mas[j];
+
+                return randomNum;
+            }
 
             return randomNum;
         }
-
-        return randomNum;
-    }
+        
 }

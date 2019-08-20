@@ -1,1 +1,6 @@
 Temp/UnityLockfile
+*.meta
+*.jpg
+*.info
+*.buildreport
+*.lock
