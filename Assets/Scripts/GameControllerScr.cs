@@ -32,14 +32,17 @@ public class GameControllerScr : MonoBehaviour
 
     public void CreateButtonCells()
     {
+        genField.Field field = new genField.Field(18,11);
+        field.initField(36,4,true);
+        field.generateField();
+
         for (int i = 0; i < cellCount; i++)
         {
+            var coords = field.findCoordsById(i + 1);
             GameObject tmpCell = Instantiate(cellButton);
             tmpCell.transform.SetParent(cellGroup, false);
-            tmpCell.GetComponent<CellScr>().id = i + 1;
-            tmpCell.GetComponent<CellScr>().SetState(0);
-            //tmpCell.GetComponent<Cell>().id = i + 1;
-            //tmpCell.GetComponent<Cell>().setState(0);
+            tmpCell.GetComponent<CellScr>().id = field.array[coords.i,coords.j].getId();
+            tmpCell.GetComponent<CellScr>().SetState(field.array[coords.i, coords.j].getState());
             AllCells.Add(tmpCell.GetComponent<CellScr>());
         }
     }
