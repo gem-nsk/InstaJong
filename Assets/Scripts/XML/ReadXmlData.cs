@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Xml.Linq;
+using System.Xml;
+using System;
 
 
 public class ReadXmlData : MonoBehaviour 
@@ -10,9 +12,6 @@ public class ReadXmlData : MonoBehaviour
     }
 
 
-
-
-
     public void SaveArray(int idElem)
     {
         XDocument doc = XDocument.Load("arrayState0.xml");
@@ -20,12 +19,22 @@ public class ReadXmlData : MonoBehaviour
         doc.Save("arrayState0.xml");
     }
 
+
     public void ReadArray()
     {
-        string fileName = "arrayState0.xml";
-        XDocument doc = XDocument.Load(fileName);
-        var z = doc.Elements("ID");
-        Debug.Log(z);
+        XmlDocument doc = new XmlDocument();
+        doc.Load("arrayState0.xml");
+        for (int i = 0; i<143;i++)
+        {
+            try
+            {
+                int value = Convert.ToInt32(doc.GetElementsByTagName("ID").Item(i).InnerText);
+                Debug.Log(value);
+            }
+            catch
+            {
+                break;
+            }
+        }
     }
-
 }
